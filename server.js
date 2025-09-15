@@ -27,6 +27,6 @@ socketServer.on("connection", (socket) => {
 
 // set port and start Socket.IO server
 const PORT = process.env.PORT || 3000;
-socketServer.listen(PORT, () => {
+httpServer.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
